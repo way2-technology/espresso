@@ -1,22 +1,20 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Web.Http;
-using MiniBiggy;
 
 namespace Espresso.Controllers {
     public class ValuesController : ApiController {
         
         public IEnumerable<string> Get() {
-            return PersistentList.Create<Log>().Select(x => x.Text);
+            return File.ReadAllLines("coffee.txt");
         }
 
         [Route("dados")]
         public void Post([FromBody]string value) {
-            var log = new Log(value);
-            var list = PersistentList.Create<Log>();
-            list.AutoSave = true;
-            list.Add(log);
+            File.AppendAllText("coffee.txt", value + Environment.NewLine);
         }
     }
 

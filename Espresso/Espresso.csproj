@@ -40,11 +40,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="MiniBiggy">
-      <HintPath>..\packages\mini-biggy.1.2.0.0\lib\net45\MiniBiggy.dll</HintPath>
+    <Reference Include="MiniBiggy, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\personal\mini-biggy\MiniBiggy.FileSystem\bin\Debug\MiniBiggy.dll</HintPath>
     </Reference>
-    <Reference Include="MiniBiggy.FileSystem">
-      <HintPath>..\packages\mini-biggy.1.2.0.0\lib\net45\MiniBiggy.FileSystem.dll</HintPath>
+    <Reference Include="MiniBiggy.FileSystem, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\personal\mini-biggy\MiniBiggy.FileSystem\bin\Debug\MiniBiggy.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
