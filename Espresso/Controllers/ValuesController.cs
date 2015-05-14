@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Web.Http;
 
 namespace Espresso.Controllers {
@@ -10,7 +11,7 @@ namespace Espresso.Controllers {
 
         [Route("dados")]
         public void Post([FromBody]string value) {
-            
+            Debug.WriteLine("POST -> " + value);
         }
     }
 }
